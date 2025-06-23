@@ -1,0 +1,13 @@
+{
+  "name": "ai-chat-extension",
+  "version": "1.0.0",
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^18.0.0",
+    "vscode": "^1.85.0"
+  }
+}
