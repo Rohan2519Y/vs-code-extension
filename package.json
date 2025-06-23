@@ -1,0 +1,33 @@
+{
+  "name": "ai-chat-extension",
+  "displayName": "AI Chat Assistant",
+  "description": "A VS Code extension with a React-based AI chat assistant using OpenAI",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^18.0.0",
+    "vscode": "^1.1.38"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "aiChat.startChat",
+        "title": "Start AI Chat Assistant"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onCommand:aiChat.startChat"
+  ]
+}
